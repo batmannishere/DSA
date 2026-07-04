@@ -1,0 +1,29 @@
+/*
+Problem: Sort an Array of 0s, 1s and 2s
+Platform: LeetCode/GFG
+Difficulty: Medium
+Approach: Dutch National Flag Algorithm
+Time Complexity: O(n)
+Space Complexity: O(1)
+*/
+class Solution {
+public:
+    void sortColors(vector<int>& nums) {
+        int low=0;
+        int mid=0;
+        int high=nums.size()-1;
+        while(mid<=high){
+            if(nums[mid]==0){
+                swap(nums[low],nums[mid]);
+                low++;
+                mid++;
+            }
+            else if(nums[mid]==2){
+                swap(nums[high],nums[mid]);
+                high--;
+            }
+            else{
+                mid++;
+            }
+        }
+    }

@@ -18,7 +18,7 @@ public:
 };
 
 // Function to reverse a linked list using the recursive approach
-Node* reverseLinkedList(Node* head) {
+Node*reverseLinkedList(Node* head) {
     // Check if the list is empty or has only one node
     if (head == NULL || head->next == NULL) {
         return head;  // No change is needed; return the current head

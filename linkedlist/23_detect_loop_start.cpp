@@ -13,7 +13,7 @@ public:
             fast = fast->next->next;
 
             if (slow == fast) {
-                slow = head;
+                slow =head;
                 break;
             }
         }
